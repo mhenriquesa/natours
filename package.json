@@ -13,5 +13,7 @@
     "postcss-nested": "^4.1.2",
     "postcss-simple-vars": "^5.0.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
 }

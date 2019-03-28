@@ -14,7 +14,7 @@ gulp.task('watch', function() {
     browserSync.reload();
     cb()
   });
-  gulp.watch('./app/assets/styles/modules/**/*', gulp.parallel('waitForStyles'));
+  gulp.watch('./app/assets/styles/**/*', gulp.parallel('waitForStyles'));
 });
 
 gulp.task('waitForStyles', gulp.series('styles', function() {
