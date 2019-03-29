@@ -19,7 +19,30 @@
 	&__title {
 		color: #fff; 
 		font-weight: 400;
+		text-transform: uppercase;
+		font-size: 60px;
+		letter-spacing: 35px;
+		margin-right: -35px;
+
+	}
+	&__sub {
+		color: #fff;
+		font-weight: 700;
+		font-size: 20px;
+		letter-spacing: 17.5px;
+		margin-right: -17.5px;
+		text-transform: uppercase;
 
 
 	}
+	&__content {
+
+		position: absolute;
+		top: 40%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		
+	}
+
 }
