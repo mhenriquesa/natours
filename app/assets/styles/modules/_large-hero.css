@@ -11,15 +11,51 @@
 		top: 40px;
 		left: 40px;
 		
-		img{
+		img {
 			height: 35px;
 			display: block;
 		}
 	}
+	
+	&__content {
+		position: absolute;
+		top: 40%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		padding: 5px;
+	}
+
 	&__title {
 		color: #fff; 
 		font-weight: 400;
-
-
+		text-transform: uppercase;
+		font-size: 60px;
+		letter-spacing: 35px;
+		margin-right: -35px;
+		padding-bottom: 0;
+		animation: moveFromLeft 1s ease-out;
+		/*animation-name: moveFromLeft;
+		animation-duration: 1s;
+		animation-timing-function: ease-out;
+		animation-delay: 3s;
+		animation-iteration-count: 2;*/
 	}
+
+	&__sub {
+		color: #fff;
+		font-weight: 700;
+		font-size: 20px;
+		letter-spacing: 17.5px;
+		margin-right: -17.5px;
+		text-transform: uppercase;
+		/*animation-name: moveFromRight;
+		animation-duration: 1s;
+		animation-timing-function: ease-out;*/
+		animation: moveFromRight 1s ease-out;
+	}
+	&__btn-container {
+		margin-top: 60px;
+	}
+	
 }
