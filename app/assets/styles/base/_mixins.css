@@ -1,16 +1,16 @@
-@define-mixin xs {
+@define-mixin sm {
 	@media (min-width: 530px) {
 		@mixin-content;
 	}
 }
 
-@define-mixin sm {
+@define-mixin md {
 	@media (min-width: 800px) {
 		@mixin-content;
 	}
 }
 
-@define-mixin md {
+@define-mixin lg {
 	@media (min-width: 1010px) {
 		@mixin-content;
 	}

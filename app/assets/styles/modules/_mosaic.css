@@ -1,0 +1,41 @@
+.mosaic {
+	position: relative;
+
+	&__pic {
+		width: 55%;
+		height: auto;
+		box-shadow: 0 1.5rem 4rem rgba(0,0,0,.4);
+		border-radius: 10px;
+		transition: all .2s;
+		outline-offset: 1rem; 
+
+		&--1 {
+			position: absolute;
+			left: 0;
+			top: -2rem;
+		}
+		&--2 {
+			position: absolute;
+			top: 2rem;
+			right: 0;
+		}
+		&--3 {
+			position: absolute;
+			top: 10rem;
+			left: 20%;
+		}
+
+		&:hover {
+		transform: scale(1.05) translateY(-.5rem) ;
+		box-shadow: 0 2.5rem 4rem rgba(0,0,0,.5);
+		z-index: 10;
+		outline: 1rem solid rgba($mediumGreen, .2);
+		}
+	}
+
+	&:hover &__pic:not(:hover) {
+		transform: scale(.95);
+	}
+
+
+}

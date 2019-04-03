@@ -1,0 +1,19 @@
+.headline {
+	text-transform: uppercase;
+	font-size: 3.5rem;
+	letter-spacing: 2px;
+	font-weight: 700;
+	transition: all .2s;
+
+	&--green {
+		background-image: linear-gradient(to right, $lightGreen, $darkGreen);
+		background-clip: text;
+		color: transparent;
+	}
+
+	&--effect-spin {
+			&:hover {
+				transform: skewY(2deg);
+			}
+	}
+}

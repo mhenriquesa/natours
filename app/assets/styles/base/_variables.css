@@ -1,8 +1,12 @@
 $lightGreen: #7ed561;
 $mediumGreen: #55c57a;
 $darkGreen: #28b485;
+$lightGrey: #f7f7f7;
 
 /*GRID*/
 
 $gutterX: 6rem;
 $gutterY: 8rem;
+
+/*Font-size*/
+$def-font-size: 1.6rem;

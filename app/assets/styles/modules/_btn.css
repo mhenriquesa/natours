@@ -43,5 +43,29 @@
 		animation: moveFromBottom 1s ease-out .75s;
 		animation-fill-mode: backwards;
 	}
+
+	&--learn-more {
+		color: $mediumGreen;
+		display: inline-block;
+		font-size: $def-font-size;
+		text-decoration: none;
+		border-bottom: 1px solid $mediumGreen;
+		padding: 3px;
+
+		&:hover {
+			background-color: $mediumGreen;
+			color: #fff;
+			box-shadow: 0 1rem 2rem rgba(0,0,0,.15);
+			transform: translateY(-2px);
+		}
+
+		&:active {
+			box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+			transform: translateY(0);
+
+		}
+
+
+	}
 }
 

@@ -4,7 +4,8 @@
 	background-image: linear-gradient(to right bottom, rgba($lightGreen, .8), rgba($darkGreen, .8)), url(../../assets/images/hero.jpg);
 	background-size: cover;
 	background-position: top;
-	clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 95%);
+	clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+	margin-bottom: 0;
 
 	&__logo {
 		position: absolute;

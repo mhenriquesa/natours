@@ -12,14 +12,14 @@
 	
 	[class ^= "row__"] {
 		float: left;
-		background-color: red;
+		/*background-color: red;*/
 
 		&:not(:last-child) {
 				margin-right: $gutterX;
 			}
 	}
 
-	@mixin md {
+	@mixin lg {
 		&__lg-6 { 
 			width: calc((100% - $gutterX) / 2);
 		}
