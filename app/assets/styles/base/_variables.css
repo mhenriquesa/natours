@@ -1,7 +1,20 @@
+/*Colors*/
 $lightGreen: #7ed561;
 $mediumGreen: #55c57a;
 $darkGreen: #28b485;
+
+$sec-color-l: #ffb900;
+$sec-color-d: #ff7730;
+
+$ter-color-l: #2998ff;
+$ter-color-d: #5643fa;
+
 $lightGrey: #f7f7f7;
+
+/*Fly-cards*/
+$pic-main-color: '../../assets/images/nat-5.jpg';
+$pic-sec-color: "../../assets/images/nat-4.jpg";
+$pic-ter-color: "../../assets/images/nat-6.jpg";
 
 /*GRID*/
 

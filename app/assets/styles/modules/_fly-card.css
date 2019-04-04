@@ -1,0 +1,150 @@
+.fly-card {
+	perspective: 150rem; 
+	position: relative;
+	height: 50rem;
+
+	&__side {
+		background-color: #fff;
+		font-size: 3rem;
+		width: 100%;
+		height: 50rem;
+		transition: all .8s ease;
+		position: absolute;
+		top: 0;
+		left: 0;
+		backface-visibility: hidden;
+		box-shadow: 0 1.5rem 4rem rgba(0,0,0, .2);
+
+			&__back {
+				background-image: linear-gradient(to right bottom, $lightGreen, $darkGreen); 
+				transform: rotateY(180deg);
+				position: relative;
+				
+					&__content {
+						position: absolute;
+						width: 100%;
+						top: 50%;
+						transform: translate(0, -50%);
+						color: #fff;
+						font-size: 1.6rem;
+
+							&__price {
+								padding: 1rem 0 6rem 0;
+								font-weight: 100;
+								font-size: 6rem;
+							}
+					}
+			}
+	}
+
+	&:hover &__side {
+		transform: rotateY(-180deg);
+	}
+
+	&:hover &__side__back {
+		transform: rotateY(0);
+	}
+
+	&__hero {
+		position: relative;
+	
+		&__img{
+			width: 100%;
+			height: 20rem;
+			clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+			background-blend-mode: hard-light;
+				background-image: linear-gradient(to right bottom, $lightGreen, $darkGreen), 
+				url($pic-main-color);
+				background-size: cover;
+		}
+
+		&__title1,
+		&__title2 {
+			font-size: 2.8rem;
+			text-transform: uppercase;
+			font-weight: 300;
+			position: absolute;
+			bottom: 6rem;
+			right: 2rem;
+			z-index: 1;
+			background-image: linear-gradient(
+				to right bottom, 
+				rgba($lightGreen, .8), 
+				rgba($darkGreen, .8));
+			color: #fff;
+			padding: .5rem 0 .5rem 1.5rem;
+		}
+
+		&__title2 {
+			bottom: 1rem;
+			right: 2rem;
+			padding: .5rem 1.5rem .5rem 0rem;
+		}
+	}
+	&__packs {
+		text-align: center;
+		padding: 3rem 8rem;
+
+		&__description {
+			padding: 1rem 0;
+			font-size: $def-font-size;
+			
+			&:not(:last-child) {
+				border-bottom: 1px solid #eee;
+			}
+		}
+	}
+
+	/* ----- Fly Card sec-color ---------*/
+	&--sec-color &__side__back  {
+			background-image: linear-gradient(
+				to right bottom, 
+				$sec-color-l, $sec-color-d); 
+	} 
+
+	&--sec-color &__hero__img {
+		background-image: linear-gradient(to right bottom, $sec-color-l, $sec-color-d), 
+				url($pic-sec-color);
+	}
+
+	&--sec-color &__hero__title1 {
+		background-image: linear-gradient(
+				to right bottom, 
+				rgba($sec-color-l, .8), 
+				rgba($sec-color-d, .8));
+	}
+
+	&--sec-color &__hero__title2 {
+	background-image: linear-gradient(
+			to right bottom, 
+			rgba($sec-color-l, .8), 
+			rgba($sec-color-d, .8));
+	}
+
+	/*******************************************/
+	/* ----- Fly Card ter-color ---------*/
+	&--ter-color &__side__back  {
+			background-image: linear-gradient(to right bottom, $ter-color-l, $ter-color-d); 
+	} 
+
+	&--ter-color &__hero__img {
+		background-image: linear-gradient(to right bottom, $ter-color-l, $ter-color-d),
+		         url($pic-ter-color);
+	}
+
+	&--ter-color &__hero__title1 {
+		background-image: linear-gradient(
+				to right bottom, 
+				rgba($ter-color-l, .8), 
+				rgba($ter-color-d, .8));
+	}
+
+	&--ter-color &__hero__title2 {
+	background-image: linear-gradient(
+			to right bottom, 
+			rgba($ter-color-l, .8), 
+			rgba($ter-color-d, .8));
+	}
+
+	/*******************************************/
+}

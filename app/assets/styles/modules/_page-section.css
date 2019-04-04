@@ -3,11 +3,19 @@
 	margin-top: 0;
 	
 	@mixin sm {
-		padding: 25rem 0;
+		padding: 25rem 0 30rem 0;
 	}
 
 	&--grey {
 		background-color: $lightGrey;
-		margin-top: -20vh;
+		margin-top: -22vh;
+	}
+
+	&--green-image {
+	background-image: linear-gradient(to right bottom, rgba($lightGreen, .8), rgba($darkGreen, .8)), url(../../assets/images/nat-4.jpg);
+	background-size: cover;
+	background-position: top;
+	clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+	margin-top: -15%;
 	}
 }

@@ -25,11 +25,17 @@
 		}
 
 		&__lg-4 {
-			width: calc((100% - 2*$gutterX) / 3);
+			width: calc((100% - 3*$gutterX) / 4);
 		}
 
 		&__lg-8 { /*Será 2x a coluna de 4 + o gutter*/
-			width: calc(2 * ((100% - 2*$gutterX) / 3) + $gutterX);
+			width: calc(2 * ((100% - 3*$gutterX) / 4) + $gutterX);
 		}
+
+		&__lg-3 {
+			width: calc((100% - 2*$gutterX) / 3);
+		}
+
+
 	}
 }

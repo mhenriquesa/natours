@@ -9,11 +9,24 @@
 		transition: all .2s;
 		position: relative;
 		font-size: 1.6rem;
+	/*	backface-visibility: hidden;
+		transform-style: preserve-3d;*/
+
+
+	&--green {
+		background-color: $mediumGreen;
+		color: #fff;
+		backface-visibility: hidden;
+		transform-style: preserve-3d;
+
+
+	}	
 	
 	&:hover {
 		transform: translateY(-3px);
 		box-shadow: 0 10px 20px rgba(0,0,0,.2);
 	}
+
 	&:active {
 		transform: translateY(-1px);
 		box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
