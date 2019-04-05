@@ -161,6 +161,7 @@ body {
 		-webkit-transform: translate(-50%, -50%);
 		        transform: translate(-50%, -50%);
 		text-align: center;
+		padding: 1rem;
 
 	}
 .large-hero__title {
@@ -173,11 +174,6 @@ body {
 		padding-bottom: 0;
 		-webkit-animation: moveFromLeft 1s ease-out;
 		        animation: moveFromLeft 1s ease-out;
-		/*animation-name: moveFromLeft;
-		animation-duration: 1s;
-		animation-timing-function: ease-out;
-		animation-delay: 3s;
-		animation-iteration-count: 2;*/
 	}
 .large-hero__sub {
 		color: #fff;
@@ -186,14 +182,14 @@ body {
 		letter-spacing: 1.75rem;
 		margin-right: -1.75rem;
 		text-transform: uppercase;
-		/*animation-name: moveFromRight;
-		animation-duration: 1s;
-		animation-timing-function: ease-out;*/
+		-webkit-backface-visibility: hidden;
+		        backface-visibility: hidden;
 		-webkit-animation: moveFromRight 1s ease-out;
 		        animation: moveFromRight 1s ease-out;
 	}
 .large-hero__btn-container {
 		margin-top: 6rem;
+		
 	}
 .btn {
 		text-transform: uppercase;
@@ -207,22 +203,16 @@ body {
 		position: relative;
 		font-size: 1.6rem;
 }
-/*	backface-visibility: hidden;
-		transform-style: preserve-3d;*/
 .btn--green {
 		background-color: #55c57a;
 		color: #fff;
 		-webkit-backface-visibility: hidden;
 		        backface-visibility: hidden;
-		-webkit-transform-style: preserve-3d;
-		        transform-style: preserve-3d;
-
-
 	}
 .btn:hover {
 		-webkit-transform: translateY(-3px);
 		        transform: translateY(-3px);
-		box-shadow: 0 10px 20px rgba(0,0,0,.2);
+		box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
 	}
 .btn:active {
 		-webkit-transform: translateY(-1px);
@@ -246,7 +236,7 @@ body {
 .btn--ghost-effect:hover::after {
 		-webkit-transform: scale(1.5);
 		        transform: scale(1.5);
-		opacity: 0;
+		opacity: 0; 
 		}
 .btn--from-bottom {
 		-webkit-animation: moveFromBottom 1s ease-out .75s;
@@ -472,6 +462,7 @@ body {
 								padding: 1rem 0 6rem 0;
 								font-weight: 100;
 								font-size: 6rem;
+
 							}
 .fly-card:hover .fly-card__side {
 		-webkit-transform: rotateY(-180deg);
@@ -480,6 +471,8 @@ body {
 .fly-card:hover .fly-card__side__back {
 		-webkit-transform: rotateY(0);
 		        transform: rotateY(0);
+		-webkit-backface-visibility: 	hidden;
+		        backface-visibility: 	hidden;	
 	}
 .fly-card__hero {
 		position: relative;

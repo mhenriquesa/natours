@@ -28,10 +28,12 @@
 						color: #fff;
 						font-size: 1.6rem;
 
+
 							&__price {
 								padding: 1rem 0 6rem 0;
 								font-weight: 100;
 								font-size: 6rem;
+
 							}
 					}
 			}
@@ -43,6 +45,7 @@
 
 	&:hover &__side__back {
 		transform: rotateY(0);
+		backface-visibility: 	hidden;	
 	}
 
 	&__hero {
