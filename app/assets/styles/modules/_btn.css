@@ -13,7 +13,6 @@
 	&--green {
 		background-color: $mediumGreen;
 		color: #fff;
-		backface-visibility: hidden;
 	}	
 	
 	&:hover {

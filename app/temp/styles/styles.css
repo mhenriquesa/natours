@@ -1,7 +1,16 @@
 /*Colors*/
-/*Fly-cards*/
+/****************************************/
+/*Fly-cards - 
+
+Pictures*/
+/*********************************************/
 /*GRID*/
-/*Font-size*/
+/**********************/
+/*Typograph*/
+/***********************/
+/*Effects*/
+/* - Shadow */
+/*********/
 *,
 *::after,
 *::before {
@@ -22,6 +31,11 @@ body {
 	box-sizing: border-box;
 }
 .u-margin-top-8 {margin-top: 8rem;}
+.u-margin-b-8 {margin-bottom: 8rem;}
+.u-div-center {
+	margin-left: auto;
+	margin-right: auto;
+}
 .u-margin-bottom-1 {margin-bottom: rem;}
 .u-padding-half {padding: 6rem 1rem;}
 .u-padding-1-0 {padding: 1rem 0;}
@@ -182,8 +196,7 @@ body {
 		letter-spacing: 1.75rem;
 		margin-right: -1.75rem;
 		text-transform: uppercase;
-		-webkit-backface-visibility: hidden;
-		        backface-visibility: hidden;
+		/*backface-visibility: hidden;*/
 		-webkit-animation: moveFromRight 1s ease-out;
 		        animation: moveFromRight 1s ease-out;
 	}
@@ -206,8 +219,6 @@ body {
 .btn--green {
 		background-color: #55c57a;
 		color: #fff;
-		-webkit-backface-visibility: hidden;
-		        backface-visibility: hidden;
 	}
 .btn:hover {
 		-webkit-transform: translateY(-3px);
@@ -308,6 +319,9 @@ body {
 	margin-right: auto;
 	margin-left: auto;
 }
+.wrapper--bg-video {
+		position: absolute;
+	}
 .page-section {
 	padding: 1.1rem 0;
 	margin-top: 0;
@@ -328,6 +342,9 @@ body {
 	-webkit-clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
 	        clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
 	margin-top: -15%;
+	}
+.page-section--bg-video {
+		position: relative;
 	}
 .headline {
 	text-transform: uppercase;
@@ -471,8 +488,6 @@ body {
 .fly-card:hover .fly-card__side__back {
 		-webkit-transform: rotateY(0);
 		        transform: rotateY(0);
-		-webkit-backface-visibility: 	hidden;
-		        backface-visibility: 	hidden;	
 	}
 .fly-card__hero {
 		position: relative;
@@ -561,6 +576,99 @@ body {
 			to right bottom, 
 			rgba(41,152,255, .8), 
 			rgba(86,67,250, .8));
+	}
+.testimonial-card {
+	width: 75%;
+	box-shadow: 0 3rem 6rem rgba(0,0,0, .3);
+	background-color: rgba(250,250,250, .6);
+	border-radius: 5px;
+	padding: 6rem;
+	padding-left: 9rem;
+	-webkit-transform: skew(-12deg);
+	        transform: skew(-12deg);
+
+
+
+}
+/*backface-visibility: hidden;*/
+.testimonial-card__inner {
+		-webkit-transform: skew(12deg);
+		        transform: skew(12deg)
+	}
+.testimonial-card__image {
+		width: 15rem;
+		height: 15rem;
+		background-color: orangered;
+		float: left;
+		shape-outside: circle(50% at 50% 50%);
+		-webkit-clip-path: circle(50% at 50% 50%);
+		        clip-path: circle(50% at 50% 50%);
+		-webkit-transform: translateX(-3rem);
+		        transform: translateX(-3rem);
+	}
+.testimonial-card__image img {
+			height: 100%;
+			position: relative;
+			-webkit-transform: translateX(-4rem) scale(1.4);
+			        transform: translateX(-4rem) scale(1.4);
+			transition: all .2s;
+
+		}
+.testimonial-card__image figcaption {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-webkit-transform: translate(-50%, 20%);
+			        transform: translate(-50%, 20%);
+			opacity: 0;
+			
+
+			color: #fff;
+			text-transform: uppercase;
+			font-size: 1.7rem;
+			text-align: center;
+		}
+.testimonial-card__title {
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 1.8rem;
+		-webkit-backface-visibility: hidden;
+		        backface-visibility: hidden;
+	}
+.testimonial-card__text {
+		font-size: 1.6rem;
+		-webkit-backface-visibility: hidden;
+		        backface-visibility: hidden;
+	}
+.testimonial-card:hover .testimonial-card__image figcaption {
+		opacity: 1;
+		-webkit-transform: translate(-50%, -50%);
+		        transform: translate(-50%, -50%);
+		transition: all .2s ;
+
+	}
+.testimonial-card:hover .testimonial-card__image img {
+		-webkit-transform: scale(1) translateX(-4rem);
+		        transform: scale(1) translateX(-4rem);
+		transition: all .2s;
+		-webkit-filter: blur(3px) brightness(80%);
+		        filter: blur(3px) brightness(80%);
+	}
+.bg-video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: .15;
+	overflow: hidden;
+}
+.bg-video__video {
+		width: 100%;
+		height: 100%;
+		-o-object-fit: cover;
+		   object-fit: cover;
+		
 	}
 @charset "UTF-8";
 @font-face {

@@ -14,5 +14,7 @@
 @import "modules/_mosaic";
 @import "modules/_card";
 @import "modules/_fly-card";
+@import "modules/_testimonial-card";
+@import "modules/_bg-video";
 
 @import "vendors/_linea-fonts";

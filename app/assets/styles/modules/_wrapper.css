@@ -2,4 +2,8 @@
 	max-width: 114rem;
 	margin-right: auto;
 	margin-left: auto;
+
+	&--bg-video {
+		position: absolute;
+	}
 }

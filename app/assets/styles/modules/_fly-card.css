@@ -45,7 +45,6 @@
 
 	&:hover &__side__back {
 		transform: rotateY(0);
-		backface-visibility: 	hidden;	
 	}
 
 	&__hero {
