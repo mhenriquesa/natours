@@ -1,0 +1,74 @@
+.testimonial-card {
+	width: 75%;
+	box-shadow: 0 3rem 6rem rgba(0,0,0, .3);
+	background-color: rgba(250,250,250, .6);
+	border-radius: 5px;
+	padding: 6rem;
+	padding-left: 9rem;
+	transform: skew(-12deg);
+	/*backface-visibility: hidden;*/
+
+	&__inner {
+		transform: skew(12deg)
+	}
+	
+
+	&__image {
+		width: 15rem;
+		height: 15rem;
+		background-color: orangered;
+		float: left;
+		shape-outside: circle(50% at 50% 50%);
+		clip-path: circle(50% at 50% 50%);
+		transform: translateX(-3rem);
+
+		img {
+			height: 100%;
+			position: relative;
+			transform: translateX(-4rem) scale(1.4);
+			transition: all .2s;
+
+		}
+
+		figcaption {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, 20%);
+			opacity: 0;
+			
+
+			color: #fff;
+			text-transform: uppercase;
+			font-size: 1.7rem;
+			text-align: center;
+		}
+	}
+
+	&__title {
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 1.8rem;
+		backface-visibility: hidden;
+	}
+
+	&__text {
+		font-size: 1.6rem;
+		backface-visibility: hidden;
+	}
+
+	&:hover &__image figcaption {
+		opacity: 1;
+		transform: translate(-50%, -50%);
+		transition: all .2s ;
+
+	}
+	&:hover &__image img {
+		transform: scale(1) translateX(-4rem);
+		transition: all .2s;
+		filter: blur(3px) brightness(80%);
+	}
+
+
+
+}

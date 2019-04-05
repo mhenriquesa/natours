@@ -10,16 +10,30 @@ $ter-color-l: #2998ff;
 $ter-color-d: #5643fa;
 
 $lightGrey: #f7f7f7;
+/****************************************/
 
-/*Fly-cards*/
+/*Fly-cards - 
+
+Pictures*/
 $pic-main-color: '../../assets/images/nat-5.jpg';
 $pic-sec-color: "../../assets/images/nat-4.jpg";
 $pic-ter-color: "../../assets/images/nat-6.jpg";
+/*********************************************/
 
 /*GRID*/
-
 $gutterX: 6rem;
 $gutterY: 8rem;
+/**********************/
 
-/*Font-size*/
+/*Typograph*/
 $def-font-size: 1.6rem;
+/***********************/
+
+/*Effects*/
+
+/* - Shadow */
+
+
+
+
+/*********/
