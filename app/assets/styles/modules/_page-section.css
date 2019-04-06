@@ -22,4 +22,9 @@
 	&--bg-video {
 		position: relative;
 	}
+
+	&--green-linear {
+		background-image: linear-gradient(to right bottom, $lightGreen, $darkGreen);
+
+	}
 }
