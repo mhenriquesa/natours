@@ -30,16 +30,20 @@ body {
 	padding: 30px;
 	box-sizing: border-box;
 }
+/*Margins*/
 .u-margin-top-8 {margin-top: 8rem;}
 .u-margin-b-8 {margin-bottom: 8rem;}
+.u-margin-b-1 {margin-bottom: 1rem;}
+.u-margin-b-3 {margin-bottom: 3rem;}
+/*TEXT*/
+.u-text-center {text-align: center;}
+/*DIVs*/
 .u-div-center {
 	margin-left: auto;
 	margin-right: auto;
 }
-.u-margin-bottom-1 {margin-bottom: rem;}
-.u-padding-half {padding: 6rem 1rem;}
-.u-padding-1-0 {padding: 1rem 0;}
-.u-text-center {text-align: center;}
+/*Display*/
+.u-display-b {display: block;}
 @-webkit-keyframes moveFromLeft {
 	0% {
 		opacity: 0;
@@ -345,6 +349,10 @@ body {
 	}
 .page-section--bg-video {
 		position: relative;
+	}
+.page-section--green-linear {
+		background-image: linear-gradient(to right bottom, #7ed561, #28b485);
+
 	}
 .headline {
 	text-transform: uppercase;
@@ -670,6 +678,134 @@ body {
 		   object-fit: cover;
 		
 	}
+.cta-block {
+	background-image: linear-gradient(105deg, 
+			rgba(250,250,250, .8) 0%, 
+			rgba(250,250,250, .8) 50%,
+			transparent 55%), 
+			url(../../assets/images/nat-10.jpg);
+
+	background-size: cover;
+	height: 50rem;
+	position: relative;
+	box-shadow: 0 1.5rem 4rem rgba(0,0,0, .5);
+	border-radius: 10px;
+
+}
+.cta-block__content {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 50rem;
+		width: 50%;
+		padding: 3rem 3rem;
+	}
+.form__label {
+		font-size: 1.5rem;
+		font-weight: 700;
+		margin-left: 2rem;
+		margin-top: .7rem;
+		display: block;
+		transition: all .2s;
+
+	}
+.form__input {
+		padding: 1.5rem 2rem;
+		font-size: 1.6rem;
+		font-family: inherit;
+		border-radius: 5px;
+		border: none;
+		border-bottom: 3px solid transparent;
+		width: 90%; 
+		display: block;
+		color: inherit;
+	}
+.form__input::-webkit-input-placeholder {
+			color: #999;
+		
+		}
+.form__input:focus {
+		outline: none;
+		box-shadow: 0 1rem 2rem rgba(0,0,0, .2);
+		border-bottom: 3px solid #55c57a;
+		}
+.form__input:focus:invalid {
+			border-bottom: 3px solid #ff7730;
+
+		}
+.form__input:placeholder-shown + .form__label {
+		opacity: 0;
+		visibility: hidden;
+		-webkit-transform: translateY(-3rem);
+		        transform: translateY(-3rem);
+	}
+/* Do NOT edit modules/_sprite directly.
+As it is generated automatically by Gulp.
+Instead, edit gulp/templates/sprites
+*/
+.icon {
+		background-image: url('/assets/images/sprites/sprite-d675eadb.svg');
+	}
+.icon--clear-view-escapes {
+	width: 142.4px;
+	height: 59.53px;
+	background-position: 0 0;
+}
+.icon--comment {
+	width: 64px;
+	height: 64px;
+	background-position: 99.70443349753694% 0;
+}
+.icon--facebook {
+	width: 21.23px;
+	height: 42.01px;
+	background-position: 26.040607071652357% 45.795830448496034%;
+}
+.icon--fire {
+	width: 56px;
+	height: 64px;
+	background-position: 0 99.56481481481481%;
+}
+.icon--globe {
+	width: 64px;
+	height: 64px;
+	background-position: 27.586206896551722% 99.56481481481481%;
+}
+.icon--instagram {
+	width: 42.01px;
+	height: 42.01px;
+	background-position: 63.2917018534157% 49.234556504346486%;
+}
+.icon--mail {
+	width: 64px;
+	height: 48px;
+	background-position: 0 48.00806451612903%;
+}
+.icon--rain {
+	width: 64px;
+	height: 64px;
+	background-position: 99.70443349753694% 59.25925925925926%;
+}
+.icon--star {
+	width: 64px;
+	height: 64px;
+	background-position: 59.11330049261084% 99.56481481481481%;
+}
+.icon--twitter {
+	width: 51.78px;
+	height: 42.06px;
+	background-position: 94.04330452560171% 98.50700323226104%;
+}
+.icon--wifi {
+	width: 60px;
+	height: 64px;
+	background-position: 68.79227053140097% 0;
+}
+.icon--youtube {
+	width: 34.75px;
+	height: 42px;
+	background-position: 36.69752421959096% 45.792307692307695%;
+}
 @charset "UTF-8";
 @font-face {
   font-family: "linea-basic-10";

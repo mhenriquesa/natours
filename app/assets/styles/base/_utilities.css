@@ -1,14 +1,17 @@
+/*Margins*/
 .u-margin-top-8 {margin-top: 8rem;}
 .u-margin-b-8 {margin-bottom: 8rem;}
+.u-margin-b-1 {margin-bottom: 1rem;}
+.u-margin-b-3 {margin-bottom: 3rem;}
 
+/*TEXT*/
+.u-text-center {text-align: center;}
+
+/*DIVs*/
 .u-div-center {
 	margin-left: auto;
 	margin-right: auto;
 }
 
-.u-margin-bottom-1 {margin-bottom: rem;}
-.u-padding-half {padding: 6rem 1rem;}
-
-.u-padding-1-0 {padding: 1rem 0;}
-
-.u-text-center {text-align: center;}
+/*Display*/
+.u-display-b {display: block;}

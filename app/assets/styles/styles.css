@@ -16,5 +16,8 @@
 @import "modules/_fly-card";
 @import "modules/_testimonial-card";
 @import "modules/_bg-video";
+@import "modules/_cta-block";
+@import "modules/_form";
+@import "modules/_sprite";
 
 @import "vendors/_linea-fonts";
