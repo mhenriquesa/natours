@@ -14,7 +14,11 @@ gulp.task('watch', function() {
     browserSync.reload();
     cb()
   });
+
   gulp.watch('./app/assets/styles/**/*', gulp.parallel('waitForStyles'));
+
+  gulp.watch('./app/assets/scripts/**/*.js', gulp.parallel('scriptsRefresh'));
+
 });
 
 gulp.task('waitForStyles', gulp.series('styles', function() {
@@ -22,4 +26,9 @@ gulp.task('waitForStyles', gulp.series('styles', function() {
     .src('./app/temp/styles/styles.css')
     .pipe(browserSync.stream());
 
+}));
+
+gulp.task('scriptsRefresh', gulp.series('scripts', function(cb) {
+    browserSync.reload();
+    cb();
 }));
