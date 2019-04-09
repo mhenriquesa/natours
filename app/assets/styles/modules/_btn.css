@@ -10,6 +10,12 @@
 		position: relative;
 		font-size: 1.6rem;
 
+	&--form {
+		border: none;
+		cursor: pointer;
+
+	}
+
 	&--green {
 		background-color: $mediumGreen;
 		color: #fff;
@@ -20,7 +26,9 @@
 		box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
 	}
 
-	&:active {
+	&:active,
+	&:focus {
+		outline: none;
 		transform: translateY(-1px);
 		box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
 	}
@@ -68,10 +76,7 @@
 		&:active {
 			box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 			transform: translateY(0);
-
 		}
-
-
 	}
 }
 

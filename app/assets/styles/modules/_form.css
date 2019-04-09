@@ -20,6 +20,7 @@
 		width: 90%; 
 		display: block;
 		color: inherit;
+		transition: all .5s;
 
 		&::-webkit-input-placeholder {
 			color: #999;
