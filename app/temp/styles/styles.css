@@ -430,7 +430,7 @@ body {
 	text-align: center;
 	border-radius: 5px;
 	box-shadow: 0 1.5rem 4rem rgba(0,0,0, .3);
-	transition: all .2s;
+	transition: all .5s;
 }
 .card__icon {
 		font-size: 6rem;
@@ -882,6 +882,13 @@ Instead, edit gulp/templates/sprites
 		 	display: block;
 		 	
 		 }
+.reveal-item {
+	opacity: 0;
+}
+/*transition: opacity 2s;*/
+.reveal-item--is-visible {
+		opacity: 1;
+	}
 @charset "UTF-8";
 @font-face {
   font-family: "linea-basic-10";
