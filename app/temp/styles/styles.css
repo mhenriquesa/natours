@@ -156,6 +156,7 @@ body {
 .large-hero {
 	position: relative;
 	height: 95vh;
+	background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(126,213,97, .8)), to(rgba(40,180,133, .8))), url(../../assets/images/hero.jpg);
 	background-image: linear-gradient(to right bottom, rgba(126,213,97, .8), rgba(40,180,133, .8)), url(../../assets/images/hero.jpg);
 	background-size: cover;
 	background-position: top;
@@ -185,7 +186,7 @@ body {
 	}
 .large-hero__title {
 		color: #fff; 
-		font-weight: 400;
+		font-weight: 300;
 		text-transform: uppercasel;
 		font-size: 6rem;
 		letter-spacing: 3.5rem;
@@ -217,6 +218,7 @@ body {
 		padding: 1.5rem 4rem;
 		display: inline-block;
 		border-radius: 10rem;
+		-webkit-transition: all .2s;
 		transition: all .2s;
 		position: relative;
 		font-size: 1.6rem;
@@ -253,6 +255,7 @@ body {
 		top: 0;
 		left: 0;
 		z-index: -1;
+		-webkit-transition: all .4s;
 		transition: all .4s;
 		background-color: #fff;
 		}
@@ -345,6 +348,7 @@ body {
 		margin-top: -22vh;
 	}
 .page-section--green-image {
+	background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(126,213,97, .8)), to(rgba(40,180,133, .8))), url(../../assets/images/nat-4.jpg);
 	background-image: linear-gradient(to right bottom, rgba(126,213,97, .8), rgba(40,180,133, .8)), url(../../assets/images/nat-4.jpg);
 	background-size: cover;
 	background-position: top;
@@ -356,6 +360,7 @@ body {
 		position: relative;
 	}
 .page-section--green-linear {
+		background-image: -webkit-gradient(linear, left top, right bottom, from(#7ed561), to(#28b485));
 		background-image: linear-gradient(to right bottom, #7ed561, #28b485);
 
 	}
@@ -364,9 +369,11 @@ body {
 	font-size: 3.5rem;
 	letter-spacing: 2px;
 	font-weight: 700;
+	-webkit-transition: all .2s;
 	transition: all .2s;
 }
 .headline--green {
+		background-image: -webkit-gradient(linear, left top, right top, from(#7ed561), to(#28b485));
 		background-image: linear-gradient(to right, #7ed561, #28b485);
 		-webkit-background-clip: text;
 		        background-clip: text;
@@ -395,6 +402,7 @@ body {
 		height: auto;
 		box-shadow: 0 1.5rem 4rem rgba(0,0,0,.4);
 		border-radius: 10px;
+		-webkit-transition: all .2s;
 		transition: all .2s;
 		outline-offset: 1rem;
 	}
@@ -430,10 +438,12 @@ body {
 	text-align: center;
 	border-radius: 5px;
 	box-shadow: 0 1.5rem 4rem rgba(0,0,0, .3);
+	-webkit-transition: all .5s;
 	transition: all .5s;
 }
 .card__icon {
 		font-size: 6rem;
+		background-image: -webkit-gradient(linear, left top, right top, from(#7ed561), to(#28b485));
 		background-image: linear-gradient(to right, #7ed561, #28b485);
 		-webkit-background-clip: text;
 		        background-clip: text;
@@ -465,6 +475,7 @@ body {
 		font-size: 3rem;
 		width: 100%;
 		height: 50rem;
+		-webkit-transition: all .8s ease;
 		transition: all .8s ease;
 		position: absolute;
 		top: 0;
@@ -474,6 +485,7 @@ body {
 		box-shadow: 0 1.5rem 4rem rgba(0,0,0, .2);
 	}
 .fly-card__side__back {
+				background-image: -webkit-gradient(linear, left top, right bottom, from(#7ed561), to(#28b485));
 				background-image: linear-gradient(to right bottom, #7ed561, #28b485); 
 				-webkit-transform: rotateY(180deg); 
 				        transform: rotateY(180deg);
@@ -511,6 +523,8 @@ body {
 			-webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 			        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 			background-blend-mode: hard-light;
+				background-image: -webkit-gradient(linear, left top, right bottom, from(#7ed561), to(#28b485)), 
+				url('../../assets/images/nat-5.jpg');
 				background-image: linear-gradient(to right bottom, #7ed561, #28b485), 
 				url('../../assets/images/nat-5.jpg');
 				background-size: cover;
@@ -524,6 +538,11 @@ body {
 			bottom: 6rem;
 			right: 2rem;
 			z-index: 1;
+			background-image: -webkit-gradient(
+				linear, 
+				left top, right bottom, 
+				from(rgba(126,213,97, .8)), 
+				to(rgba(40,180,133, .8)));
 			background-image: linear-gradient(
 				to right bottom, 
 				rgba(126,213,97, .8), 
@@ -549,21 +568,37 @@ body {
 			}
 /* ----- Fly Card sec-color ---------*/
 .fly-card--sec-color .fly-card__side__back  {
+			background-image: -webkit-gradient(
+				linear, 
+				left top, right bottom, 
+				from(#ffb900), to(#ff7730));
 			background-image: linear-gradient(
 				to right bottom, 
 				#ffb900, #ff7730); 
 	}
 .fly-card--sec-color .fly-card__hero__img {
+		background-image: -webkit-gradient(linear, left top, right bottom, from(#ffb900), to(#ff7730)), 
+				url("../../assets/images/nat-4.jpg");
 		background-image: linear-gradient(to right bottom, #ffb900, #ff7730), 
 				url("../../assets/images/nat-4.jpg");
 	}
 .fly-card--sec-color .fly-card__hero__title1 {
+		background-image: -webkit-gradient(
+				linear, 
+				left top, right bottom, 
+				from(rgba(255,185,0, .8)), 
+				to(rgba(255,119,48, .8)));
 		background-image: linear-gradient(
 				to right bottom, 
 				rgba(255,185,0, .8), 
 				rgba(255,119,48, .8));
 	}
 .fly-card--sec-color .fly-card__hero__title2 {
+	background-image: -webkit-gradient(
+			linear, 
+			left top, right bottom, 
+			from(rgba(255,185,0, .8)), 
+			to(rgba(255,119,48, .8)));
 	background-image: linear-gradient(
 			to right bottom, 
 			rgba(255,185,0, .8), 
@@ -571,20 +606,33 @@ body {
 	}
 /* ----- Fly Card ter-color ---------*/
 .fly-card--ter-color .fly-card__side__back  {
+			background-image: -webkit-gradient(linear, left top, right bottom, from(#2998ff), to(#5643fa));
 			background-image: linear-gradient(to right bottom, #2998ff, #5643fa); 
 	}
 /*******************************************/
 .fly-card--ter-color .fly-card__hero__img {
+		background-image: -webkit-gradient(linear, left top, right bottom, from(#2998ff), to(#5643fa)),
+		         url("../../assets/images/nat-6.jpg");
 		background-image: linear-gradient(to right bottom, #2998ff, #5643fa),
 		         url("../../assets/images/nat-6.jpg");
 	}
 .fly-card--ter-color .fly-card__hero__title1 {
+		background-image: -webkit-gradient(
+				linear, 
+				left top, right bottom, 
+				from(rgba(41,152,255, .8)), 
+				to(rgba(86,67,250, .8)));
 		background-image: linear-gradient(
 				to right bottom, 
 				rgba(41,152,255, .8), 
 				rgba(86,67,250, .8));
 	}
 .fly-card--ter-color .fly-card__hero__title2 {
+	background-image: -webkit-gradient(
+			linear, 
+			left top, right bottom, 
+			from(rgba(41,152,255, .8)), 
+			to(rgba(86,67,250, .8)));
 	background-image: linear-gradient(
 			to right bottom, 
 			rgba(41,152,255, .8), 
@@ -624,6 +672,7 @@ body {
 			position: relative;
 			-webkit-transform: translateX(-4rem) scale(1.4);
 			        transform: translateX(-4rem) scale(1.4);
+			-webkit-transition: all .2s;
 			transition: all .2s;
 
 		}
@@ -657,12 +706,14 @@ body {
 		opacity: 1;
 		-webkit-transform: translate(-50%, -50%);
 		        transform: translate(-50%, -50%);
+		-webkit-transition: all .2s ;
 		transition: all .2s ;
 
 	}
 .testimonial-card:hover .testimonial-card__image img {
 		-webkit-transform: scale(1) translateX(-4rem);
 		        transform: scale(1) translateX(-4rem);
+		-webkit-transition: all .2s;
 		transition: all .2s;
 		-webkit-filter: blur(3px) brightness(80%);
 		        filter: blur(3px) brightness(80%);
@@ -684,7 +735,8 @@ body {
 		
 	}
 .cta-block {
-	background-image: linear-gradient(105deg, 
+	background-image: 
+	        linear-gradient(105deg, 
 			rgba(250,250,250, .8) 0%, 
 			rgba(250,250,250, .8) 50%,
 			transparent 55%), 
@@ -710,6 +762,7 @@ body {
 		margin-left: 2rem;
 		margin-top: .7rem;
 		display: block;
+		-webkit-transition: all .2s;
 		transition: all .2s;
 
 	}
@@ -723,6 +776,7 @@ body {
 		width: 90%; 
 		display: block;
 		color: inherit;
+		-webkit-transition: all .5s;
 		transition: all .5s;
 	}
 .form__input::-webkit-input-placeholder {
