@@ -1,4 +1,4 @@
-var gulp = require('gulp'),
+const gulp = require('gulp'),
 postcss = require('gulp-postcss'),
 rgba = require('postcss-hexrgba'),
 autoprefixer = require('autoprefixer'),
@@ -8,10 +8,12 @@ cssImport = require('postcss-import'),
 mixins = require('postcss-mixins'),
 colorFunctions = require('postcss-color-function');
 
-gulp.task('styles', function() {
+function cssPipe() {
   return gulp
   	.src('./app/assets/styles/styles.css')
     .pipe(postcss([cssImport, mixins, cssvars, nested, rgba, colorFunctions, autoprefixer]))
     .on('error', (error) => console.log(error.toString()))
     .pipe(gulp.dest('./app/temp/styles'));
-});
+}
+
+gulp.task('styles', cssPipe)

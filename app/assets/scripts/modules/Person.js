@@ -10,11 +10,6 @@ class Person {
 }
 
 export default Person;
-
-
-
- 
-
 // function Person(fullName) {
 // 	this.name = fullName;
 // 	this.greet = function() {
