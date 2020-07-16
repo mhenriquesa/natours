@@ -25,7 +25,7 @@
   },
   "dependencies": {
     "jquery-smooth-scroll": "^2.2.0",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "set-value": "^3.0.1",
     "waypoints": "^4.0.1"
   }
